@@ -22,10 +22,12 @@ function Login() {
 async function fazerLogin(event: React.SubmitEvent) {
   try {
     event.preventDefault();
-    await axios.post("http://localhost:8888/auth/login", {
+    const response = await axios.post("http://localhost:8888/auth/login", {
       email: email,
       senha: password,
     });
+    localStorage.setItem("@dadosLogin", JSON.stringify(response.data)); // Armazena os dados de login no localStorage em formato String
+
     swal.fire({
       title: "Login realizado com sucesso!",
       icon: "success",

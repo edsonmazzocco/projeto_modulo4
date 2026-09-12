@@ -1,0 +1,64 @@
+.containerMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+  height: 38px;
+  background-color: #fff;
+}
+
+.containerMenu h1{
+  font-size: 32px;
+  font-weight: bold;
+  color: #8F4219;
+}
+
+.logoMenu {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contenteLeft {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenteLeft ul {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentRight {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerChair {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.chair {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 16px;
+  width: 150px;
+}
+
+.chairHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
