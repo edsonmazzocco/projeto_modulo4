@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import axios from "axios";
+import {Dialog, DialogTitle, DialogContent, DialogActions} from "@mui/material";
 import { getDataLocalStorage } from "../../utils/getDataLocalStorage";
 
 import stylesIndex from "../../index.module.css";
 import styles from "./Mesas.module.css";
-import { FaDoorOpen } from "react-icons/fa";
 import { GiWoodenChair } from "react-icons/gi";
-
-import {Dialog, DialogTitle, DialogContent, DialogActions} from "@mui/material";
 
 
 const dadosLocalStorage = getDataLocalStorage();
@@ -81,22 +79,6 @@ function Mesas() {
     <>
 
     <div>
-      <div className={styles.containerMenu}>
-        <div className={styles.contenteLeft}>
-          <span className={styles.logoMenu}>🍽️</span>
-          <h1>Sabor & Arte</h1>
-          <ul>
-            <li>Mesas</li>
-            <li>Pedidos</li>
-          </ul>
-        </div>
-        <div className={styles.contentRight}>
-          <span>{dadosLocalStorage.nome}</span>
-          <span>
-            <FaDoorOpen/>
-          </span>
-        </div>
-      </div>
 
       <h2>Mesas</h2>
       <p>Selecione uma mesa para abrir ou acompanhar o pedido</p>
